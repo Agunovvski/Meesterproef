@@ -1,0 +1,123 @@
+/* webfonts */
+
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('./Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Gotham Medium Italic';
+    src: url('./Gotham/Gotham-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('./Gotham/Gotham-Book.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Book Italic';
+    src: url('./Gotham/Gotham-BookItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('./Gotham/Gotham-Light.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('./Gotham/Gotham-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Bold Italic';
+    src: url('./Gotham/Gotham-BoldItalic.ttf');
+}
+
+
+
+
+
+ /* styles */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.container-horizontal {
+    display: flex;
+    /* min-width: 100%; */
+    /* min-height: 200px; */
+    /* overflow-x: scroll; */
+    scrollbar-width: none;
+    height: 100%;
+    /* display: inline-block; */
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* white-space: nowrap; */
+    flex-direction: row;
+    width: 100%;
+}
+
+
+section.content {
+    z-index: 1;
+    background-color: #fff;
+    min-width: 100vw;
+    width: 100%;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+div.container-horizontal section.content:first-child {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url('./images/thanos-armor-movie.jpg');
+    /* background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+}
+
+div.container-horizontal section.content:nth-of-type(2) {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url('https://cdn2.pu.nl/media/wouter/thanos-scarecrow-1333x1000.jpg');
+    /* background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+}
+
+h1, h2, h3 {
+    font-family: 'Gotham Medium';
+}
+
+p {
+    font-family: 'Gotham Book';
+}
+
+h1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-size: 3rem;
+    color: white;
+}
